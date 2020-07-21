@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1ACF21"
+    tools:context=".Game">
+
+    <Button
+        android:id="@+id/buttonPlayerOne"
+        android:layout_width="117dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="84dp"
+        android:text="P1"
+        android:textColor="#070607"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPlayerTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonPlayerTwo" />
+
+    <Button
+        android:id="@+id/buttonPlayerTwo"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="86dp"
+        android:text="P2"
+        android:textColor="#121014"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/playerOneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="76dp"
+        android:text="TextView"
+        android:textColor="#313435"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerTwoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:text="TextView"
+        android:textColor="#313435"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scorePlayerTwo" />
+
+    <TextView
+        android:id="@+id/scorePlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="50dp"
+        android:text="Points"
+        android:textColor="#1A1414"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesPlayerOne"
+        app:layout_constraintStart_toEndOf="@+id/playerOneName" />
+
+    <TextView
+        android:id="@+id/scorePlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="Points"
+        android:textColor="#1A1414"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesPlayerTwo"
+        app:layout_constraintStart_toEndOf="@+id/playerTwoName" />
+
+    <TextView
+        android:id="@+id/gamesPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="Games"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/setsPlayerOne"
+        app:layout_constraintStart_toEndOf="@+id/scorePlayerOne" />
+
+    <TextView
+        android:id="@+id/gamesPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="2dp"
+        android:text="Games"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/gamesPlayerOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setsPlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="77dp"
+        android:text="Sets"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/setsPlayerTwo"
+        app:layout_constraintStart_toEndOf="@+id/gamesPlayerOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setsPlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Sets"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gamesPlayerTwo"
+        app:layout_constraintEnd_toEndOf="@+id/setsPlayerOne" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
